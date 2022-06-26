@@ -15,21 +15,21 @@
         <header class="container">
             <a href="index.html"><img src="svg/logo.svg" alt="logo"></a>
             <nav>
-                <ul>
+                <ul class="top_nav">
                     <li>
-                        <a href="#" class="header_nav">Web app</a>
+                        <a href="#" class="top_nav_item">Web app</a>
                     </li>
                     <li>
-                        <a href="#" class="header_nav">Mobile app</a>
+                        <a href="#" class="top_nav_item">Mobile app</a>
                     </li>
                     <li>
-                        <a href="#" class="header_nav">Pricing</a>
+                        <a href="#" class="top_nav_item">Pricing</a>
                     </li>
                     <li>
-                        <a href="#" class="header_nav">Blog</a>
+                        <a href="#" class="top_nav_item">Blog</a>
                     </li>
                     <li>
-                        <a href="#" class="header_nav">Utility pages</a>
+                        <a href="#" class="top_nav_item">Utility pages</a>
                     </li>
                 </ul>
             </nav>
@@ -47,13 +47,17 @@
             <a href="#">
                 <button class="top_button_get_started">
                     Get started
+                    <svg width="23" height="14" viewBox="0 0 23 14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 1L22 7M22 7L16 13M22 7H1" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
                 </button>
             </a>
-
-            <div class="sub_hero_img">
-                <img src="img/sub_hero_img.png" alt="sub_hero_img">
-            </div>
         </div>
+    </div>
+
+    <div class="sub_hero_img container">
+        <img src="img/sub_hero_img.png" alt="sub_hero_img">
     </div>
 
     <main>
@@ -72,10 +76,10 @@
                 <div class="perfect_approach_item">
                     <img src="svg/increase_icon.svg" alt="increase_icon">
                     <div class="perfect_approach_item_text">
-                        <p class="perfect_approach_item_text_header">
+                        <h3 class="perfect_approach_item_text_header">
                             Increase workflow
-                        </p>
-                        <p class="perfect_approach_item_text_text">
+                        </h3>
+                        <p class="perfect_approach_item_text_p">
                             Abilities taken within a multiple platforms
                         </p>
                     </div>
@@ -83,10 +87,10 @@
                 <div class="perfect_approach_item">
                     <img src="svg/secured_icon.svg" alt="secured_icon">
                     <div class="perfect_approach_item_text">
-                        <p class="perfect_approach_item_text_header">
+                        <h3 class="perfect_approach_item_text_header">
                             Secured structure
-                        </p>
-                        <p class="perfect_approach_item_text_text">
+                        </h3>
+                        <p class="perfect_approach_item_text_p">
                             Purpose oriented structures protect thedata
                         </p>
                     </div>
@@ -120,7 +124,7 @@
                 <div class="capture_convert_slider">
                     <article class="capture_convert_slider_item">
                         <h3 class="capture_convert_slider_item_text">
-                            All important tools
+                            All tools
                         </h3>
                         <div class="capture_convert_slider_item_icons">
                             <img src="svg/photoshop_icon.svg" alt="photoshop_icon">
@@ -132,17 +136,16 @@
 
                     <article class="capture_convert_slider_item">
                         <h3 class="capture_convert_slider_item_text">
-                            Support for responsive device
+                            All devices
                         </h3>
-                        <img src="img/support_for_img.png" alt="support_for_img">
+                        <img class="capture_convert_slider_item_icons" src="img/support_for_img.png"
+                            alt="support_for_img">
                     </article>
 
                     <article class="capture_convert_slider_item">
                         <h3 class="capture_convert_slider_item_text">
-                            Image
-                            video
-                            audio
-                            gif
+                            All
+                            files
                         </h3>
                         <div class="capture_convert_slider_item_icons">
                             <img src="svg/image_icon.svg" alt="image_icon">
@@ -162,7 +165,7 @@
                     engagement & productivity
                 </span>
             </h2>
-            <section class="software_content">
+            <section class="software_content container">
                 <article class="software_content_text">
                     <div class="software_content_text_item">
                         <h3 class="software_content_text_item_header">
@@ -205,6 +208,7 @@
                     </div>
                 </article>
                 <article class="software_content_img">
+                    <img src="img/software_img.png" alt="software">
                 </article>
             </section>
         </section>
@@ -260,7 +264,7 @@
 
     <div class="news container">
         <div class="news_item">
-            <img src="img/young_startaps_img.png" alt="young_startaps_img">
+            <img class="news_item_photo" src="img/young_startaps_img.png" alt="young_startaps_img">
             <h3 class="news_item_header">Young startups with
                 Spaatz in full throttle
             </h3>
@@ -271,8 +275,8 @@
             </p>
             <div class="news_item_userabout">
                 <img src="img/user_1.png" alt="user_1">
-                <div class="news_item_userabout">
-                    <span class="news_item_userabout_name"></span>
+                <div class="news_item_userabout_block">
+                    <span class="news_item_userabout_name">Antony Wills</span>
                     <div class="news_item_userabout_date-tech">
                         <span class="news_item_userabout_date">December 22, 2021</span>
                         <span class="news_item_userabout_tech">Entertainment</span>
@@ -282,7 +286,7 @@
         </div>
 
         <div class="news_item">
-            <img src="img/how_to_choise_img.png" alt="young_startaps_img">
+            <img class="news_item_photo" src="img/how_to_choise_img.png" alt="young_startaps_img">
             <h3 class="news_item_header">How to choose a tech
                 stack for your startup
             </h3>
@@ -292,9 +296,9 @@
                 override the digital divide with DevOps
             </p>
             <div class="news_item_userabout">
-                <img src="img/user_2.png" alt="user_1">
-                <div class="news_item_userabout">
-                    <span class="news_item_userabout_name"></span>
+                <img src="img/user_2.png" alt="user_2">
+                <div class="news_item_userabout_block">
+                    <span class="news_item_userabout_name">Natalia Tena</span>
                     <div class="news_item_userabout_date-tech">
                         <span class="news_item_userabout_date">December 22, 2021</span>
                         <span class="news_item_userabout_tech">Lifestyle</span>
@@ -304,7 +308,7 @@
         </div>
 
         <div class="news_item">
-            <img src="img/polished_img.png" alt="young_startaps_img">
+            <img class="news_item_photo" src="img/polished_img.png" alt="young_startaps_img">
             <h3 class="news_item_header">Polished Spaatz
                 for android
             </h3>
@@ -314,9 +318,9 @@
                 to beta test override the digital form
             </p>
             <div class="news_item_userabout">
-                <img src="img/user_3.png" alt="user_1">
-                <div class="news_item_userabout">
-                    <span class="news_item_userabout_name"></span>
+                <img src="img/user_3.png" alt="user_3">
+                <div class="news_item_userabout_block">
+                    <span class="news_item_userabout_name">Antony Wills</span>
                     <div class="news_item_userabout_date-tech">
                         <span class="news_item_userabout_date">December 22, 2021</span>
                         <span class="news_item_userabout_tech">Productivity</span>
@@ -324,10 +328,19 @@
                 </div>
             </div>
         </div>
-
-        <a href="#"><button class="news_button">More blogs</button></a>
-
     </div>
+
+    <div class="button_for_news container">
+        <a href="#"><button class="news_button">
+                <span>More blogs</span>
+                <svg width="23" height="14" viewBox="0 0 23 14" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1L22 7M22 7L16 13M22 7H1" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </a>
+    </div>
+
 
     <div class="unleash">
         <div class="unleash_contant container">
@@ -335,16 +348,21 @@
                 <h2 class="unleash_header_h2">
                     Unleash your growth potential
                 </h2>
-                <a href="#"><button class="unleash_header_button">Request a demo</button></a>
+                <a href="#"><button class="unleash_header_button">Request a demo
+                        <svg width="23" height="14" viewBox="0 0 23 14" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 1L22 7M22 7L16 13M22 7H1" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button></a>
             </div>
-            <img src="img/unlrash_img.png" alt="unleash">
+            <img class="unleash_image" src="img/unlrash_img.png" alt="unleash">
         </div>
     </div>
 
     <footer>
         <div class="footer_contant container">
             <div class="footer_contant_about">
-                <img src="svg/logo.svg" alt="logo">
+                <img src="svg/logo_white.svg" alt="logo">
                 <p class="footer_contant_about_text">
                     Spaatz is a professional yet
                     creative dashboard for
@@ -362,7 +380,7 @@
                     <h4 class="footer_contant_links_item_header">
                         Explore
                     </h4>
-                    <ul>
+                    <ul class="footer_contant_links_item_list">
                         <li>
                             <a class="footer_contant_links_item_li" href="#">
                                 Web app
@@ -395,7 +413,7 @@
                     <h4 class="footer_contant_links_item_header">
                         Utility
                     </h4>
-                    <ul>
+                    <ul class="footer_contant_links_item_list">
                         <li>
                             <a class="footer_contant_links_item_li" href="#">
                                 Licenses
@@ -428,7 +446,7 @@
                     <h4 class="footer_contant_links_item_header">
                         Category
                     </h4>
-                    <ul>
+                    <ul class="footer_contant_links_item_list">
                         <li>
                             <a class="footer_contant_links_item_li" href="#">
                                 Lifestyle
